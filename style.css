@@ -10,17 +10,17 @@ html {
   display: flex;
 }
 img {
-	width: 60px;
-	height: 80px;
+  width: 60px;
+  height: 80px;
 }
 .logo-text {
   font-family: "Norse Bold", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 }
 .logo {
-	display: flex;
-	padding: 8px 0;
+  display: flex;
+  padding: 8px 0;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0, 0.5);
@@ -28,7 +28,7 @@ img {
   top: 18%;
 }
 .left-side {
-	color: white;
+  color: white;
   height: 100vh;
   width: 30vw;
   display: flex;
@@ -38,4 +38,15 @@ img {
   background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+.credit-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+.credit-photo a {
+  color: white;
 }
