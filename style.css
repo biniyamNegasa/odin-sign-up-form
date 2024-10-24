@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./fonts/Norse-Bold.woff2");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+img {
+	width: 60px;
+	height: 80px;
+}
+.logo-text {
+  font-family: "Norse Bold", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 50px;
+}
+.logo {
+	display: flex;
+	padding: 8px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 18%;
+}
+.left-side {
+	color: white;
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./images/close-up-plant.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
