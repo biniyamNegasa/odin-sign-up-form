@@ -9,6 +9,7 @@ html {
   padding: 0;
   display: flex;
   background-color: #edf0ed;
+  font-family: Arial, Helvetica, sans-serif;
 }
 img {
   width: 60px;
@@ -31,20 +32,18 @@ img {
 .left-side {
   color: white;
   height: 100vh;
-  width: 30vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url("./images/close-up-plant.jpg");
-  background-size: contain;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .credit-photo {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   padding-bottom: 8px;
 }
@@ -53,15 +52,16 @@ img {
 }
 .first-row {
   padding: 10% 0 11px 30px;
-  font-family: sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
 .main-text {
+  inline-size: 55ch;
   line-height: 1.2;
 }
-form {
+.form {
   background-color: #fff;
+  width: 136%;
   padding-left: 30px;
   box-shadow: 5px 3px 5px #dfdada;
 }
@@ -71,7 +71,7 @@ form {
 
 button {
   color: white;
-  background-color: #596D48;
+  background-color: #596d48;
   border-width: 0;
   border-radius: 5px;
   padding: 10px 40px;
@@ -79,12 +79,51 @@ button {
   margin: 30px 0;
 }
 .login-text {
-  font-family: sans-serif;
   font-size: small;
 }
 .login-text a {
-  color: #596D48;
+  color: #596d48;
   text-decoration: none;
   font-weight: bold;
   text-shadow: 0 1px #4f7c26;
+}
+
+.group {
+  display: flex;
+}
+
+.group div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-right: 60px;
+}
+
+legend {
+  padding: 15px 0px;
+  font-weight: bold;
+  font-size: large;
+}
+input {
+  border-color: #e5e7eb;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+}
+
+
+input:focus {
+  outline-style: solid;
+  outline-color: blue;
+  box-shadow: 2px 2px 3px grey;
+}
+
+input:invalid {
+  outline-style: solid;
+  outline-color: red;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 10px;
 }
